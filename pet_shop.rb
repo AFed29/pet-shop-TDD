@@ -78,9 +78,9 @@ end
 
 # Incomplete method for the operation of selling a pet to a customer.
 # One addition would be to remove the pet from the shop, another would be a new
-# method to remove the cash from the customer as well. 
+# method to remove the cash from the customer as well.
 def sell_pet_to_customer(pet_shop, pet, customer)
-  if pet != nil
+  if pet
     if customer_can_afford_pet(customer, pet)
       add_pet_to_customer(customer, pet)
       # remove_pet_by_name(pet[:name])
