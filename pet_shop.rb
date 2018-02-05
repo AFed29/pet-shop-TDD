@@ -10,7 +10,7 @@ end
 
 # Method to add or remove any cash from transactions undertaken by the shop.
 def add_or_remove_cash(pet_shop, credit_or_deposit)
-  (pet_shop[:admin][:total_cash] += credit_or_deposit)
+  pet_shop[:admin][:total_cash] += credit_or_deposit
 end
 
 # Method to call and return how many pets the shop has sold.
